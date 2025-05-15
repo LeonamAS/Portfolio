@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* 1 - Topo da página */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid rgba(128, 128, 128, 0.158);
+    border-right: 5px solid rgba(128, 128, 128, 0.158);
+    height: 60px;
+    padding: 10px 30px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    align-content: right;
+    gap: 20px;
+}
+
+nav a,
+header a,
+a:hover,
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+/* 2 - Corpo da página */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana;
+    margin: 0 5%;
+}
+
+main {
+    background-color: whitesmoke;
+    text-align: center;
+    border-left: 5px solid rgba(128, 128, 128, 0.158);
+    border-right: 5px solid rgba(128, 128, 128, 0.158);
+    padding: 5%;
+}
+
+/* 3 - Pé da página */
+footer {
+    border-left: 5px solid rgba(128, 128, 128, 0.158);
+    border-right: 5px solid rgba(128, 128, 128, 0.158);
+    padding: 10px 30px;
+    height: 60px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    height: 60px;
+}
+
+/* 4 - Página inicial */
+.home img {
+    border: 1px solid black;
+    width: 70%;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* 5 - Galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.frame,
+.multi-frame {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid black;
+    width: 450px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.frame img {
+    width: 100%;
+}
+
+.multi-frame img {
+    width: 50%;
+}
+
+/* 6 - Página Sobre */
