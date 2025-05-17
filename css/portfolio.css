@@ -1,10 +1,10 @@
 * {
     margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /* 1 - Topo da página */
@@ -12,8 +12,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-left: 5px solid rgba(128, 128, 128, 0.158);
-    border-right: 5px solid rgba(128, 128, 128, 0.158);
+    background-color: white;
+    border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke;
     height: 60px;
     padding: 10px 30px;
 }
@@ -36,28 +37,35 @@ a:visited {
     text-decoration: none;
 }
 
-/* 2 - Corpo da página */
+/* 2 - Corpo da página (Todas) */
 body {
     display: flex;
     flex-direction: column;
     font-family: Verdana;
+    min-height: 100vh;
     margin: 0 5%;
 }
 
 main {
     background-color: whitesmoke;
     text-align: center;
-    border-left: 5px solid rgba(128, 128, 128, 0.158);
-    border-right: 5px solid rgba(128, 128, 128, 0.158);
-    padding: 5%;
+    border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke;
+    padding: 2%;
 }
 
 /* 3 - Pé da página */
 footer {
-    border-left: 5px solid rgba(128, 128, 128, 0.158);
-    border-right: 5px solid rgba(128, 128, 128, 0.158);
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    background-color: white;
+    border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke;
     padding: 10px 30px;
     height: 60px;
+    max-width: 100%;
 }
 
 .copyright {
@@ -80,12 +88,12 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 20px;
 }
 
 .frame,
-.multi-frame {
+.quatro {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -99,7 +107,7 @@ footer {
     width: 100%;
 }
 
-.multi-frame img {
+.quatro img {
     width: 50%;
 }
 
