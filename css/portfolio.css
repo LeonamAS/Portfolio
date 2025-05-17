@@ -87,28 +87,24 @@ footer {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 20px;
+    padding: 0 4px;
 }
 
-.frame,
-.quatro {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    border: 1px solid black;
-    width: 450px;
-    border-radius: 8px;
-    padding: 10px;
+.column {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
 }
 
-.frame img {
+
+.column img {
     width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
 }
 
 .quatro img {
-    width: 50%;
+    width: 25%;
 }
 
 /* 6 - Página Sobre */
