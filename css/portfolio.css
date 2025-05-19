@@ -13,10 +13,10 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    border-left: 5px solid whitesmoke;
-    border-right: 5px solid whitesmoke;
+    /* border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke; */
     height: 60px;
-    padding: 10px 30px;
+    padding: 10px 20px;
 }
 
 .logo img {
@@ -44,14 +44,14 @@ body {
     font-family: Verdana;
     min-height: 100vh;
     margin: 0 5%;
+    box-shadow: 0px 0px 10px;
 }
 
 main {
     background-color: whitesmoke;
     text-align: center;
-    border-left: 5px solid whitesmoke;
-    border-right: 5px solid whitesmoke;
-    padding: 2%;
+    /* border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke; */
 }
 
 /* 3 - Pé da página */
@@ -61,8 +61,8 @@ footer {
     left: 5%;
     right: 5%;
     background-color: white;
-    border-left: 5px solid whitesmoke;
-    border-right: 5px solid whitesmoke;
+    /* border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke; */
     padding: 10px 30px;
     height: 60px;
     max-width: 100%;
@@ -84,27 +84,56 @@ footer {
 }
 
 /* 5 - Galeria */
-.gallery {
+.galeria {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 12px;
 }
 
-.column {
-    flex: 25%;
+.coluna {
+    flex: 15%;
     max-width: 50%;
-    padding: 0 4px;
+    padding: 0 8px;
 }
 
 
-.column img {
+.coluna img {
     width: 100%;
-    margin-top: 8px;
+    margin: 8px 0;
     vertical-align: middle;
 }
 
+.quatro {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 0;
+}
+
 .quatro img {
-    width: 25%;
+    width: 50%;
+    margin: 0;
 }
 
 /* 6 - Página Sobre */
+
+/* 0 - Media Queries */
+@media (max-width: 900px) {
+
+    /* 5 - Galeria */
+    .coluna {
+        flex: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* 2 - Corpo da página (Todas) */
+    body {
+        margin: 0;
+    }
+
+    /* 5 - Galeria */
+    .coluna {
+        flex: 40%;
+    }
+}
