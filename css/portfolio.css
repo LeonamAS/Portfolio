@@ -56,7 +56,7 @@ main {
 
 /* 3 - Pé da página */
 footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 5%;
     right: 5%;
@@ -88,10 +88,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding: 12px;
+    justify-content: center;
 }
 
 .coluna {
-    flex: 15%;
+    flex: 25%;
     max-width: 50%;
     padding: 0 8px;
 }
@@ -117,11 +118,15 @@ footer {
 /* 6 - Página Sobre */
 
 /* 0 - Media Queries */
-@media (max-width: 900px) {
+@media (max-width: 1280px) {
 
     /* 5 - Galeria */
     .coluna {
-        flex: 25%;
+        flex: 40%;
+    }
+
+    .terceira {
+        max-width: 100%;
     }
 }
 
@@ -130,10 +135,15 @@ footer {
     /* 2 - Corpo da página (Todas) */
     body {
         margin: 0;
+        box-shadow: none;
     }
 
     /* 5 - Galeria */
+    .galeria{
+        flex-direction: column;
+    }
+
     .coluna {
-        flex: 40%;
+        max-width: 100%;
     }
 }
