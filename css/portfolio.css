@@ -1,20 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
 /* 1 - Topo da página */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    /* border-left: 5px solid whitesmoke;
-    border-right: 5px solid whitesmoke; */
     height: 60px;
     padding: 10px 20px;
 }
@@ -50,19 +39,14 @@ body {
 main {
     background-color: whitesmoke;
     text-align: center;
-    /* border-left: 5px solid whitesmoke;
-    border-right: 5px solid whitesmoke; */
+    min-height: calc(100% - 167px);
 }
 
 /* 3 - Pé da página */
 footer {
-    /* position: fixed; */
-    bottom: 0;
-    left: 5%;
-    right: 5%;
+    display: block;
+    bottom: auto;
     background-color: white;
-    /* border-left: 5px solid whitesmoke;
-    border-right: 5px solid whitesmoke; */
     padding: 10px 30px;
     height: 60px;
     max-width: 100%;
@@ -77,10 +61,8 @@ footer {
 
 /* 4 - Página inicial */
 .home img {
-    border: 1px solid black;
     width: 70%;
     padding: 15px;
-    border-radius: 8px;
 }
 
 /* 5 - Galeria */

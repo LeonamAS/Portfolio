@@ -8,6 +8,9 @@
     <title>Kurogane</title>
 
     <link rel="stylesheet" href="css/portfolio.css">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+
+    <script src="js/carousel.js"></script>
 </head>
 
 <body>
@@ -25,10 +28,21 @@
 
     <main>
         <section class="home">
-            <a href="gallery.html">
-                <img src="https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ibd3mkrsgukzs2sdcy5ffben/bafkreib3casev4brifmonpsuva7iib3afqnduja7jp4iyvjifkhppywk5m@jpeg"
-                    alt="Honda City Turbo II">
-            </a>
+            <div id="carousel">
+            </div>
+            <div id="carousel-title">
+            </div>
+
+            <script>
+                //insert each image on carousel
+                carouselArr.push(new Carousel("https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ibd3mkrsgukzs2sdcy5ffben/bafkreib3casev4brifmonpsuva7iib3afqnduja7jp4iyvjifkhppywk5m@jpeg",
+                    "Honda City Turbo II", "gallery.html"));
+                carouselArr.push(new Carousel("https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ibd3mkrsgukzs2sdcy5ffben/bafkreifl7suwrot6ynzc42ca57tmfzakg2uja7jcxa47jqlvby52aayrcq@jpeg",
+                    "Sunset", "gallery.html"));
+                carouselArr.push(new Carousel("https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ibd3mkrsgukzs2sdcy5ffben/bafkreibukagaezhc3goddaplkerwvi47ioea34gmtxca6a6uajkk2ga44e@jpeg",
+                    "Bathroom Sink", "gallery.html"));
+                Carousel.Start(carouselArr);
+            </script>
         </section>
     </main>
 
